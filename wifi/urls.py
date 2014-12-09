@@ -4,6 +4,7 @@ from django.conf import settings
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'wifi.views.home', name='home'),
+    url(r'^f/(.*)', 'wifi.views.fp', name='files'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
